@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+:root {
+  --prmary-color:rgba(126, 99, 58, 0.75);
+  --secondary-color: #999182;
+  --btn-color: #9c7836;
+  --color:#fff;
+  --transition-speed: 0.5s;
+}
+
+body {
+  font-family: 'Orbitron', sans-serif;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  line-height: 1.4;
+  overflow: hidden;
+}
+
+#showcase {
+  background: var(--prmary-color);
+  color: var(--color);
+  height: 100vh;
+  position: relative;
+}
+
+#showcase::before {
+  content: '';
+  background: url('../img/beforePhoto.jpg') no-repeat center center/cover;
+  top: 0;
+  left: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.container {
+  max-width: 980px;
+  margin: auto;
+  padding: 0 3rem;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content:center;
+  text-align: center;
+  height: 100%;
+}
+
+.content h1 {
+  font-size: 3rem;
+}
+
+.content p {
+  line-height: 1.7;
+  font-size: 1.3rem;
+  padding: 1.5rem 0;
+}
+
+.content a {
+  background: var(--btn-color);
+  color: var(--color);
+  text-decoration: none;
+  font-size: 1.2rem;
+  padding: 0.7rem 0.5rem;
+  border-radius: 0.8rem;
+  border: none;
+  transition: all var(--transition-speed) ease-in-out;
+}
+
+.content a:hover {
+  opacity:0.7;
+}
