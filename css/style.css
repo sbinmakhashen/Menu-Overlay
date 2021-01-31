@@ -2,6 +2,7 @@
 :root {
   --prmary-color:rgba(126, 99, 58, 0.75);
   --secondary-color: #999182;
+  --overlay-color:rgba(39, 24, 6, 0.75);
   --btn-color: #9c7836;
   --color:#fff;
   --transition-speed: 0.5s;

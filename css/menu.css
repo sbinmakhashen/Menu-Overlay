@@ -22,7 +22,7 @@
   left: 0;
   height: 60px;
   width: 60px;
-  padding: 1rem ;
+  padding: 1rem;
   background: var(--prmary-color);
   z-index: 1;
   display: flex;
@@ -33,12 +33,56 @@
 /* First hamburger line */
 .hamb-wrap .hamburger > div {
   position: relative;
-  width: 100%;
   flex: none;
+  width: 100%;
   height: 2px;
-  display: flex;
   background: var(--color);
+  display: flex;
   justify-content: center;
   align-items: center;
   transition: all var(--transition-speed) ease-in-out;
+}
+
+/* Top and bottom hamburger lines */
+.hamb-wrap .hamburger > div::before,
+.hamb-wrap .hamburger > div::after {
+  content: '';
+  position: absolute;
+  top: -10px;
+  background: inherit;
+  width: 100%;
+  z-index: 1;
+  height: 2px;
+}
+/* show bottom hmaburger line */
+.hamb-wrap .hamburger > div::after {
+  top: 10px;
+}
+
+/* Animiting the hamburger menu icon*/
+/* Rotating the hamburger menu */
+.hamb-wrap .toggler:checked + .hamburger > div {
+  transform: rotate(130deg);
+}
+/* truning hamburger ico into X when checked it */
+.hamb-wrap .toggler:checked + .hamburger > div::before, 
+.hamb-wrap .toggler:checked + .hamburger > div::after {
+  transform: rotate(90deg);
+  top: 0;
+} 
+
+/* rotaing the X when toggler when hamburger checked */
+.hamb-wrap .toggler:checked:hover + .hamburger > div {
+  transform: rotate(220deg);
+}
+
+.hamb-wrap .menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
