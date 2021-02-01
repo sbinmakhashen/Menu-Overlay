@@ -7,8 +7,8 @@
 
 .hamb-wrap .toggler {
   position: absolute;
-  /* top: 56.2rem;
-  left: 115.6rem; */
+  top: 0;
+  left: 0;
   z-index: 2;
   opacity: 0;
   height: 60px;
@@ -18,8 +18,8 @@
 
 .hamb-wrap .hamburger {
   position: absolute;
-  /* top: 56.2rem;
-  left: 115.6rem; */
+  top: 0;
+  left: 0;
   height: 60px;
   width: 60px;
   padding: 1rem;
@@ -129,13 +129,13 @@
 
 .hamb-wrap .menu ul li {
   list-style: none;
-  padding: 0.55rem;
+  padding: 1.4rem;
 }
 
 .hamb-wrap .menu .btn {
   color: var(--color);
   text-decoration: none;
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   transition: all var(--transition-speed) ease-in-out;
 } 
 
