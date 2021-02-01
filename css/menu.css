@@ -76,6 +76,7 @@
   transform: rotate(220deg);
 }
 
+/* menu of hamburger icon */
 .hamb-wrap .menu {
   position: fixed;
   top: 0;
@@ -85,4 +86,30 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  /* z-index: -1; */
+}
+
+/* Overlay */
+.hamb-wrap .menu > div {
+  background: var(--overlay-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200vw;
+  height: 200vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  transition: all var(--transition-speed) ease-in-out;
+  transform: scale(0);
+}
+
+.hamb-wrap .menu > div > div {
+  
+}
+
+.hamb-wrap ul li {
+  text-decoration: none;
+  list-style: none;
+
 }
